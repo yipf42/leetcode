@@ -7,12 +7,11 @@
 // @lc code=start
 function twoSum(nums: number[], target: number): number[] {
   while (nums.length > 1) {
-    let last = nums.pop();
+    let last = nums.pop() as number;
     if (nums.includes(target - last)) {
-      return [nums.indexOf(target - last), nums.length]
+      return [nums.indexOf(target - last), nums.length];
     }
   }
   return [];
-};
+}
 // @lc code=end
-

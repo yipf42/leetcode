@@ -6,7 +6,9 @@
 
 // @lc code=start
 function lengthOfLongestSubstring(s: string): number {
-  let start: number = 0, end: number = 0, ans: number = 0;
+  let start: number = 0,
+    end: number = 0,
+    ans: number = 0;
   const position = new Map();
   for (; end < s.length; end++) {
     const val = s.charAt(end);
@@ -17,6 +19,5 @@ function lengthOfLongestSubstring(s: string): number {
     position.set(val, end + 1);
   }
   return ans;
-};
+}
 // @lc code=end
-

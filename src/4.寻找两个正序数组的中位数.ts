@@ -13,6 +13,5 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
   } else {
     return array[(length - 1) / 2];
   }
-};
+}
 // @lc code=end
-
